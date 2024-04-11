@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url(../img/profile.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.row {
+    position: relative;
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 6%;
+}
+
+
+/* ===== Clear floats after the columns ===== */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    width: 350px;
+    padding: 0 0px;
+    margin: auto;
+}
+
+.column:hover {
+    border: black 2px solid;
+    border-radius: 25px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 0 0 60px 0;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+}
+
+.card img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    height: 175px;
+}
+
+.text {
+    height: 150px;
+    padding: 0 20px 20px;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+.text p {
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 550;
+}
+
+.text h3 {
+    text-transform: uppercase;
+}
+
+
+/* 
+.text~button {
+    background-color: #ef6f6c;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-top: 45px;
+    width: 70%;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+} */
+
+.text~a {
+    text-decoration: none;
+    border: #ef6f6c solid 2px;
+    width: 10 0px;
+    padding: 10px 70px;
+    background: linear-gradient(to right, #ef6f6c 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    color: rgb(224, 17, 86);
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+.text~a:hover {
+    background-position: left bottom;
+    background-color: #ef6f6c;
+    color: black;
+    border: black solid 2px;
+}
+
+@media only screen and (max-width: 1024px) {
+    * {
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+    .column {
+        width: 60%;
+        display: block;
+        margin: 5px;
+        height: 500px;
+    }
+    .row {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        height: 100vh;
+        padding: 50px;
+    }
+    .card {
+        border-radius: 25px;
+        padding: 25px;
+    }
+    .card img {
+        visibility: hidden;
+        display: none;
+    }
+    .text {
+        height: 200px;
+    }
+    .text p {
+        font-weight: 200;
+        font-size: 24px;
+    }
+    .maxdiv {
+        height: max-content;
+    }
+    .text h3 {
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+}

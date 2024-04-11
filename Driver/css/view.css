@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: turquoise;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url(../../img/profile.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.banner .container {
+    background-color: white;
+    overflow: hidden;
+    border-radius: 25px;
+    display: flex;
+    margin-top: 5%;
+}
+
+.col-first {
+    border-right: 2px solid #ef6f6c;
+    box-sizing: border-box;
+}
+
+.col-first .row {
+    padding: 0;
+    flex-direction: column;
+}
+
+.col-first .row .col {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+#profileimg {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 15px auto;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    border: 1px solid #ef6f6c;
+    padding: 5px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    margin: 25px auto;
+    line-height: 25px;
+}
+
+label:hover {
+    background-color: #ef6f6c;
+    color: white;
+}
+
+.col-name {
+    background-color: #ef6f6c;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.col-name h1 {
+    margin: auto;
+    line-height: auto;
+}
+
+.btns {
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    width: 50% !important;
+}
+
+.btns button {
+    margin: 15px 0;
+    padding: 6px 12px;
+}
+
+.btns a {
+    color: #ef6f6c !important;
+    margin: 15px 0;
+    background-color: transparent !important;
+}
+
+.btns a:hover {
+    background-color: #ef6f6c !important;
+    color: white !important;
+}
+
+.col-7 {
+    background-color: white;
+    vertical-align: middle;
+    padding: 10% 10px;
+    height: 70% !important;
+}
+
+#update {
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    .banner {
+        height: auto !important;
+    }
+    .banner .w-50 {
+        max-width: 100%;
+        width: 100% !important;
+        border-radius: 0;
+        height: 100% !important;
+        margin: 0;
+        flex-direction: column;
+        padding: 0;
+    }
+    .imagediv {
+        width: 100%;
+        height: 100px;
+    }
+    .col-first {
+        border-right: none;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100% !important;
+        height: 50% !important;
+    }
+    #profileimg {
+        display: block;
+        width: 100px;
+        height: 100px;
+    }
+    label {
+        border: 1px solid #ef6f6c;
+        padding: 5px 15px;
+        border-radius: 25px;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        line-height: 25px;
+    }
+    .btn-outline-danger {
+        border: none;
+        width: 100%;
+    }
+    .col-7 {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .col-7 .btns {
+        margin-bottom: 25px !important;
+    }
+    .input-group textarea {
+        height: 75px !important;
+    }
+}
+
+
+/* booking page css  */
+
+.bookings {
+    height: 100% !important;
+    padding-top: 5px !important;
+    overflow: scroll !important;
+    overflow-x: hidden !important;
+}
+
+.bookings .card {
+    margin: 10px 0;
+}

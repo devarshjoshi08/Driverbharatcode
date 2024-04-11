@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../../img/profile.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.banner .container {
+    background-color: white;
+    overflow: hidden;
+    border-radius: 25px;
+    padding: 35px 15px;
+    margin-top: 3%;
+}
+
+.col-first {
+    border-right: 2px solid #ef6f6c;
+    box-sizing: border-box;
+    padding: 25px 10px 15px 10px;
+}
+
+.col-first .row {
+    padding: 0;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+.col-first .row .col {
+    padding: 0;
+    text-align: center;
+}
+
+.btns {
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    width: 50% !important;
+}
+
+.btns a {
+    color: #ef6f6c !important;
+    background-color: transparent !important;
+}
+
+.btns a:hover {
+    background-color: #ef6f6c !important;
+    color: white !important;
+}
+
+.col-7 {
+    background-color: white;
+    vertical-align: middle;
+    padding: 10px 10px;
+    height: 70% !important;
+}
+
+@media screen and (max-width:800px) {
+    .banner {
+        height: auto !important;
+    }
+    .banner .w-50 {
+        max-width: 100%;
+        width: 100% !important;
+        border-radius: 0;
+        height: 100% !important;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 25px 10px;
+    }
+    .banner .container .row {
+        display: flex;
+        flex-direction: column;
+    }
+}

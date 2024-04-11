@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/login\ background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    overflow: hidden;
+}
+
+.box {
+    width: 50%;
+    height: 300px;
+    display: block;
+    border-radius: 25px;
+    padding: 35px 25px;
+    margin: 10% auto;
+    background-color: transparent;
+    border-radius: 2px solid white;
+    box-shadow: 1px 1px 12px 2px white;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    margin: 5% 0;
+    color: white;
+    display: block;
+}
+
+.right h3 {
+    color: white;
+}
+
+.part {
+    width: 100%;
+    display: flex;
+}
+
+.left {
+    width: 49%;
+    color: white;
+}
+
+.right {
+    width: 49%;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 12px 2px white;
+    padding: 25px;
+    background-color: transparent;
+}
+
+ol {
+    margin: 15px;
+    line-height: 30px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    width: 49%;
+    padding: 5px;
+    margin: 15px 0;
+    outline: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+button {
+    top: 0;
+    left: 0;
+    width: 175px;
+    height: 25px;
+    color: white;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, red, #d071f9);
+    border-radius: 30px;
+    transition: 1s;
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+}

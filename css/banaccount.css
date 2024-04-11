@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/login\ background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    overflow: hidden;
+}
+
+.box {
+    width: 50%;
+    height: 200px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin: 17% auto;
+    padding: 25px;
+    box-shadow: 1px 1px 12px 2px white;
+}
+
+.box p {
+    color: white;
+    text-align: center;
+}
+
+.register {
+    width: 45%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 45px auto;
+    background-image: linear-gradient(to right, red, #d071f9);
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: white;
+}
+
+.register a {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .box {
+        width: 85%;
+        height: auto;
+    }
+    .register {
+        width: 85%;
+    }
+}

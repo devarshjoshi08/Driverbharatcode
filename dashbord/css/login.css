@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.left {
+    width: 15%;
+    height: 100vh;
+    float: left;
+    background: rgba(49, 56, 77, 0.692);
+    overflow: hidden;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+.right {
+    width: 85%;
+    float: right;
+    /* background: lightgreen; */
+}
+
+.top {
+    height: 40vh;
+    /* padding: 100px; */
+    text-align: center;
+}
+
+.top h3 {
+    margin: 50px auto 5px auto;
+    font-size: 35px;
+    color: white;
+}
+
+.top p {
+    font-size: 25px;
+}
+
+.mid {
+    height: 60vh;
+    vertical-align: top;
+}
+
+ul {
+    text-decoration: none;
+    width: 100%;
+}
+
+li {
+    height: 50px;
+    padding: 10px 0px;
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mid button {
+    color: white;
+    background: none;
+    outline: none;
+    border: none;
+    width: 80%;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    /* padding: 10px; */
+}
+
+.mid a {
+    color: white;
+    text-decoration: none;
+    width: 80%;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20%;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 10px 10px 20px #ccc;
+    width: 100%;
+    position: fixed;
+}
+
+.header-left {
+    float: left;
+    width: 33%;
+    padding: 20px;
+    /* display: flex; */
+}
+
+h2 {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.header-left.header-profile img {
+    width: 13%;
+    float: left;
+    padding-right: 10px;
+}
+
+h3 {
+    padding-top: 10px;
+}
+
+.search {
+    border-radius: 20px;
+    padding: 8px 12px;
+    border: 2px solid #bbb;
+    transition: width 1s ease;
+    width: 50%;
+}
+
+.search:focus {
+    border: 2px solid #fd5a5e;
+    border-radius: 20px;
+    outline: none;
+    width: 95%;
+}
+
+i.fa.fa-search {
+    background-color: #fd5a5e;
+    color: #fff;
+    width: 33px;
+    height: 36px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: -35px;
+    border-top-right-radius: 50px 50px;
+    border-bottom-right-radius: 50px 50px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+table {
+    width: 90%;
+    margin: 120px auto 0px auto;
+    visibility: visible;
+    display: table;
+}

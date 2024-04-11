@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: turquoise;
+}
+
+.banner .container {
+    background-color: white;
+    overflow: hidden;
+    border-radius: 25px;
+    display: flex;
+    margin-top: 7%;
+}
+
+.col-first {
+    border-right: 2px solid #ef6f6c;
+    box-sizing: border-box;
+}
+
+.col-first .row {
+    padding: 0;
+    flex-direction: column;
+}
+
+.col-first .row .col {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+#profileimg {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 15px auto;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    border: 1px solid #ef6f6c;
+    padding: 5px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    margin: 25px auto;
+    line-height: 25px;
+}
+
+label:hover {
+    background-color: #ef6f6c;
+    color: white;
+}
+
+.col-name {
+    background-color: #ef6f6c;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.col-name h1 {
+    margin: auto;
+    line-height: auto;
+}
+
+.col-7 {
+    position: relative;
+}
+
+.col-7 .container {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    display: flex;
+    margin: auto;
+}
+
+.col-7 .container .row {
+    margin: auto;
+    height: 75%;
+}
+
+.col-7 .container .row .col {
+    margin: 0 20px;
+}
+
+.btn-outline-danger {
+    width: 100%;
+}
+
+.btn-outline-danger a:hover {
+    transition: 0.9s ease;
+    color: white;
+}
+
+.btn-outline-danger a {
+    text-decoration: none;
+    color: #ef6f6c;
+}
+
+@media screen and (max-width:1024px) {
+    .banner .w-50 {
+        max-width: 100%;
+        width: 100% !important;
+        border-radius: 0;
+        height: 92% !important;
+        overflow: hidden;
+        margin: 0;
+        flex-direction: column;
+        padding: 0;
+    }
+    .imagediv {
+        width: 100%;
+        height: 100px;
+    }
+    .col-first {
+        border-right: none;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100% !important;
+        height: 30% !important;
+    }
+    #profileimg {
+        display: block;
+        width: 100px;
+        height: 100px;
+    }
+    label {
+        border: 1px solid #ef6f6c;
+        padding: 5px 15px;
+        border-radius: 25px;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        line-height: 25px;
+    }
+    .col-7 {
+        height: 60% !important;
+        width: 100% !important;
+    }
+    .col-7 .container {
+        top: 10px;
+        transform: translateY(0);
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        margin: auto;
+        /* background-color: black; */
+    }
+    .col-7 .container .row {
+        margin: 0 auto;
+        flex-direction: column;
+        width: 100%;
+    }
+    .col-7 .container .row .col {
+        margin: 0;
+        height: 75px !important;
+    }
+    .btn-outline-danger {
+        border: none;
+        width: 100%;
+    }
+}

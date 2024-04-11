@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: turquoise;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url(../../img/profile.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.profile {
+    position: relative;
+    width: 30%;
+    height: 600px;
+    margin: 5% auto;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid white;
+    overflow: hidden;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    box-shadow: 1px 1px 12px 2px white;
+}
+
+form {
+    width: 80%;
+    margin: auto;
+    padding: 25px 0;
+}
+
+input {
+    width: 80%;
+    display: block;
+    margin: 25px auto;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.register {
+    width: 55%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 40px auto;
+    background-image: linear-gradient(to right, red, #d071f9);
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: white;
+}
+
+@media screen and (max-width:800px) {
+    .profile {
+        width: 95%;
+        font-size: 17px;
+    }
+}

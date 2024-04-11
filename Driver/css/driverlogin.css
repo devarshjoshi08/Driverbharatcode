@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url(../../img/profile.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    overflow: hidden;
+}
+
+.success {
+    width: auto;
+    position: relative;
+    background-color: transparent;
+    color: white;
+    padding: 15px 50px 15px 5px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.form-box {
+    width: 380px;
+    height: 480px;
+    background-color: transparent;
+    margin: 4% auto;
+    position: relative;
+    padding: 5px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 12px 2px white;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+}
+
+.button-box {
+    border: 2px solid white;
+    width: 220px;
+    margin: 35px auto 25px auto;
+    position: relative;
+    border-radius: 25px;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: none;
+    position: relative;
+    color: white;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(to right, red, #d071f9);
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.icon {
+    margin: auto;
+    text-align: center;
+}
+
+.icon .fab {
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.login-form {
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: 1s;
+}
+
+.form-felds {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.login,
+.register {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background-image: linear-gradient(to right, red, #d071f9);
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: white;
+}
+
+.login {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.f123 .form-felds {
+    width: 49%;
+}
+
+#adharcard {
+    font-size: 15px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+#loginform {
+    left: 50px;
+}
+
+#registerform {
+    left: 450px;
+}
+
+.name .form-felds {
+    width: 49%;
+}
+
+.bottombtn {
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    float: right;
+    padding: 15px auto;
+    margin: 10px auto;
+    font-size: 15px;
+}
+
+.bottomdiv {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.admin {
+    padding: 5px 100px;
+    height: 25px;
+    background-image: linear-gradient(to right, red, #d071f9);
+    cursor: pointer;
+}
+
+select {
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+    margin: 5px 0;
+    outline: none;
+}
+
+select option {
+    color: black;
+}
+
+.f123 select {
+    width: 49%;
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .form-box {
+        width: 90%;
+        height: 480px;
+        color: white;
+        overflow: hidden;
+        margin-top: 25%;
+    }
+    .login-form {
+        top: 180px;
+        position: absolute;
+        width: 225px;
+        transition: 1s;
+    }
+    .bottombtn,
+    .admin {
+        display: block;
+        width: 100%;
+        padding: 10px auto;
+        margin: 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,436 @@
+/*===== GOOGLE FONTS =====*/
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+/*===== VARIABLES CSS =====*/
+
+:root {
+    --header-height: 3rem;
+    --nav-width: 68px;
+    --nav-width2: 200px;
+    /*===== Colors =====*/
+    /* --frst-color: #0a043c; */
+    --light-purple-color: #E4E9F7;
+    /* --first-color-light: black; */
+    --black-color: black;
+    --white-color: #F7F6FB;
+    --grey-color: grey;
+    /*===== Font and typography =====*/
+    --body-font: 'Nunito', sans-serif;
+    --normal-font-size: 1rem;
+    /*===== z index =====*/
+    --z-fixed: 100;
+}
+
+
+/*===== BASE =====*/
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    position: relative;
+    margin: var(--header-height) 0 0 0;
+    padding: 0 1rem;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    transition: .5s;
+    background-color: var(--light-purple-color);
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    height: var(--header-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: var(--black-color);
+    z-index: var(--z-fixed);
+    transition: .5s;
+}
+
+.header__toggle {
+    color: var(--white-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.header__img {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.header__img img {
+    width: 100px;
+}
+
+.l-navbar {
+    position: fixed;
+    top: 0;
+    left: -60%;
+    width: var(--nav-width2);
+    height: 100vh;
+    background: var(--white-color);
+    padding: .5rem 1rem 0 0;
+    transition: .5s;
+    z-index: var(--z-fixed);
+}
+
+.nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.nav__logo,
+.nav__link {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: 1rem;
+    padding: .5rem 0 .5rem 1.5rem;
+}
+
+.nav__logo {
+    margin-bottom: 2rem;
+}
+
+.nav__logo-icon {
+    font-size: 1.25rem;
+    color: var(--black-color);
+}
+
+.nav__logo-name {
+    font-weight: 700;
+    color: var(--black-color);
+}
+
+.nav__link {
+    position: relative;
+    color: var(--black-color);
+    margin-bottom: 1.5rem;
+    transition: .3s;
+}
+
+.nav__link:hover {
+    color: var(--grey-color);
+}
+
+.nav__icon {
+    font-size: 1.25rem;
+}
+
+.show {
+    left: 0;
+}
+
+.body-pd {
+    padding-left: calc(var(--nav-width) + 10rem);
+    overflow: hidden;
+}
+
+.active {
+    border-radius: 15px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 32px;
+    background-color: var(--white-color);
+}
+
+
+/* navbar end */
+
+
+/* dashbord */
+
+h1 {
+    padding: 2rem 0 0;
+    text-align: center;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    line-height: 1;
+    font-size: 20px;
+    text-align: center;
+}
+
+.maindiv {
+    margin: auto;
+}
+
+.carddiv {
+    width: 200px;
+    height: 75px;
+    margin: 25px auto;
+    background-color: orange;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.icondiv {
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    background-color: #000000;
+    color: white;
+    border-radius: 25px;
+}
+
+.contentdiv {
+    width: 200px;
+}
+
+.contentdiv p {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.carddiv i {
+    line-height: 75px;
+    font-size: 30px;
+}
+
+
+/* other pages table */
+
+.insertbtn {
+    width: 100%;
+    padding-top: 15px;
+    display: flex;
+}
+
+.insertbtn a {
+    text-align: center;
+    background-color: lightseagreen;
+    color: white;
+    width: 50%;
+    text-decoration: none;
+    padding: 15px 0px;
+    border-radius: 15px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+thead td {
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    margin: 80px auto 0px auto;
+    visibility: visible;
+    display: table;
+    font-size: auto;
+}
+
+.remove {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    width: 80px;
+    display: block;
+    margin: auto;
+    border: none;
+}
+
+.add {
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    width: 80px;
+    display: block;
+    margin: auto;
+    border: none;
+}
+
+.update {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    width: 80px;
+    display: block;
+    margin: auto;
+    border: none;
+}
+
+.ban {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+    width: 80px;
+    display: block;
+    margin: auto;
+    border: none;
+}
+
+.remove a,
+.update a,
+.add a {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (min-width:860px) {
+    body {
+        margin: calc(var(--header-height) + 1rem) 0 0 0;
+        padding-left: calc(var(--nav-width) + 2rem);
+    }
+    .header {
+        height: calc(var(--header-height) + 1rem);
+        padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
+    }
+    .header__img {
+        width: auto;
+        height: 50px;
+    }
+    .header__img img {
+        width: auto;
+    }
+    .l-navbar {
+        left: 0;
+        padding: 1rem 1rem 0 0;
+        width: calc(var(--nav-width));
+    }
+    .show {
+        width: calc(var(--nav-width) + 156px);
+    }
+    .body-pd {
+        padding-left: calc(var(--nav-width) + 188px);
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+    .remove {
+        background-color: red;
+        color: white;
+        padding: 5px 10px;
+        width: 80px;
+        display: block;
+        margin: auto;
+        border: none;
+    }
+    .update {
+        background-color: green;
+        color: white;
+        padding: 5px 10px;
+        width: 80px;
+        display: block;
+        margin: auto;
+        border: none;
+    }
+    .remove a,
+    .update a {
+        text-decoration: none;
+        color: white;
+    }
+    .insertbtn {
+        width: 800px;
+        margin-right: 0;
+        float: right;
+    }
+    .insertbtn a {
+        text-align: center;
+        background-color: lightseagreen;
+        color: white;
+        text-decoration: none;
+        width: 250px;
+        padding: 10px 15px;
+        border-radius: 15px;
+        margin: 15px 4px;
+    }
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+    thead td {
+        text-align: center;
+    }
+    table {
+        width: 90%;
+        margin: 80px auto 0px auto;
+        visibility: visible;
+        display: table;
+    }
+    .remove {
+        background-color: red;
+        color: white;
+        padding: 5px 10px;
+        width: 80px;
+        display: block;
+        margin: auto;
+        border: none;
+    }
+    .add {
+        background-color: orange;
+        color: white;
+        padding: 5px 10px;
+        width: 80px;
+        display: block;
+        margin: auto;
+        border: none;
+    }
+    .update {
+        background-color: green;
+        color: white;
+        padding: 5px 10px;
+        width: 80px;
+        display: block;
+        margin: auto;
+        border: none;
+    }
+    .ban {
+        background-color: gray;
+        color: white;
+        padding: 5px 10px;
+        width: 80px;
+        display: block;
+        margin: auto;
+        border: none;
+    }
+    .remove a,
+    .update a,
+    .add a {
+        text-decoration: none;
+        color: white;
+    }
+}

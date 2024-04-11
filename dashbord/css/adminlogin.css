@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* ----- banner and text -----  */
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: rgb(35, 46, 51);
+    /* margin: 0px; */
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome {
+    margin: 0px;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    transform: rotateY(-50%);
+    text-align: center;
+    color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 400px;
+    height: 450px;
+    margin: auto;
+    background: #1B2028;
+    box-shadow: 0px 4px 35px -5px rgb(84, 170, 191);
+}
+
+.form {
+    width: 380px;
+    height: 400px;
+    margin: 25px 10px 25px 10px;
+}
+
+.box i {
+    font-size: 75px;
+    margin: 25px;
+}
+
+.box h1 {
+    margin-bottom: 15px;
+}
+
+.logintext {
+    margin-bottom: 15px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(84, 170, 191);
+    width: 300px;
+    height: 40px;
+    outline: none;
+    color: white;
+    padding: 5px;
+}
+
+.logintext:focus {
+    color: white;
+}
+
+.signin {
+    background: rgb(84, 170, 191);
+    color: white;
+    width: 275px;
+    padding: 10px 20px;
+    display: block;
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px auto;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.signin:hover {
+    background: #4082f5;
+    box-shadow: 0px 4px 35px -5px #4082f5;
+    cursor: pointer;
+}
+
+.signin:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 760px) {
+    .main {
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
+    .welcome {
+        width: 100%;
+        position: absolute;
+        top: 35%;
+        transform: rotateY(-50%);
+        text-align: center;
+        color: white;
+        display: block;
+    }
+    .signin {
+        width: 275px;
+        padding: 10px 20px;
+        display: block;
+        height: 50px;
+        border-radius: 20px;
+        margin: 30px auto;
+    }
+    .signin:focus {
+        outline: none;
+    }
+}
